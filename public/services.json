@@ -1,0 +1,44 @@
+[
+  {
+    "service_id": "01",
+    "title": "Donation",
+    "img": "https://i.ibb.co/mrj2T9v/donate.jpg",
+    "description": "One of the easiest and most obvious ways of helping the poor and needy people is through donation. You can donate money, food, clothes, toys, old furniture, and books to the nearest organizations who are dealing to help the needy people. These donations can brighten the day of poor people."
+  },
+  {
+    "service_id": "02",
+    "title": "Child Education",
+    "img": "https://i.ibb.co/bmgVsHC/education.jpg",
+    "description": "Communicating knowledge can help the poor and needy people in a better way to stand on their feet. Education is the basis of getting out from hardships of life. Giving free education to needy people help them to grow as individuals and lead a better life. Poor and needy people cannot afford the education so teaching them in a sustainable way to grow their own food could help them to lead a better life."
+  },
+  {
+    "service_id": "03",
+    "title": "Food Charity",
+    "img": "image.png",
+    "description": "Volunteer to help cook and serve a meal for individuals and families at a homeless shelter. Please Join Us in the Journey & Help Ensure At Least One Meal a Day. With your support, we can give children the resources needed for a path out of poverty."
+  },
+  {
+    "service_id": "04",
+    "title": "Fundraising",
+    "img": "https://i.ibb.co/vJt8g5X/fundraising-graphic.jpg",
+    "description": "One of the ways to help the world's poor and needy people is fundraising. You can contact people about many organizations to donate to, can start campaigns for fundraising. Fundraising can also involve donating items for free and holding auctions for those items. These things would help in funds raising."
+  },
+  {
+    "service_id": "05",
+    "title": "Warm Cloth",
+    "img": "https://i.ibb.co/XWNsTt8/Warm-Clothing.jpg",
+    "description": "This winter, charity blankets donations will help us to provide warm clothes to homeless. This project will help to buy warm clothes and blankets for children community school, age 3 years to 12 years to fight with rough and cold weather. Operation Warm is a national nonprofit that manufactures brand-new, high-quality coats and shoes for children in need."
+  },
+  {
+    "service_id": "06",
+    "title": "Book for Students",
+    "img": "https://i.ibb.co/bNt95hr/books.jpg",
+    "description": "Reading is Fundamental RIF supports literacy programs nationwide and aims to put books in the hands of underprivileged. We're connecting Sharing centers where you can directly share books within communities. Our goal is to reduce goods waste."
+  },
+  {
+    "service_id": "07",
+    "title": "Raise Awareness",
+    "img": "https://i.ibb.co/fpzMM06/raise-awareness.jpg",
+    "description": " If you are aware of issues related to poor people whether through social media or some other source you can use your information to raise the awareness of those around you. If you care about the poor and needy people you can be sure that other people do too, but may just be unaware of how they can help. You can share your information on different poverty-fighting organizations with your colleagues, family, friends and also on social platforms like “We Help”."
+  }
+]
