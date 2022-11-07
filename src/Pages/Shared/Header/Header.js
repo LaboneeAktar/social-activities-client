@@ -1,52 +1,82 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const leftSideMenuItems = (
+    <>
+      <li>
+        <Link
+          to="/"
+          aria-label="Our product"
+          title="Our product"
+          className="font-lg tracking-wide lg:text-gray-100 text-black transition-colors duration-200 hover:text-teal-400"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/donataion"
+          aria-label="Our product"
+          title="Our product"
+          className="font-lg tracking-wide lg:text-gray-100 text-black transition-colors duration-200 hover:text-teal-400"
+        >
+          Donation
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/events"
+          aria-label="Our product"
+          title="Our product"
+          className="font-lg tracking-wide lg:text-gray-100 text-black transition-colors duration-200 hover:text-teal-400"
+        >
+          Events
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/blog"
+          aria-label="Our product"
+          title="Our product"
+          className="font-lg tracking-wide lg:text-gray-100 text-black transition-colors duration-200 hover:text-teal-400"
+        >
+          Blog
+        </Link>
+      </li>
+    </>
+  );
+
+  const rightSideMenuItems = (
+    <>
+      <li>
+        <Link
+          to="/signin"
+          aria-label="Sign in"
+          title="Sign in"
+          className="font-lg tracking-wide lg:text-gray-100 text-black transition-colors duration-200 hover:text-teal-accent-400"
+        >
+          Sign in
+        </Link>
+      </li>
+      <li>
+        <Link>
+          <button className="btn bg-purple-400 font-normal normal-case text-lg">
+            Admin
+          </button>
+        </Link>
+      </li>
+    </>
+  );
+
   return (
     <div className="bg-gray-900">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex lg:grid items-center grid-cols-2 lg:grid-cols-3">
           <ul className=" items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Donation
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Events
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
-                className="font-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Blog
-              </a>
-            </li>
+            {leftSideMenuItems}
           </ul>
           <a
             href="/"
@@ -74,26 +104,7 @@ const Header = () => {
             </h1>
           </a>
           <ul className="items-center hidden ml-auto space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                aria-label="Sign in"
-                title="Sign in"
-                className="font-lg tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Sign in
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-lg tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Sign up
-              </a>
-            </li>
+            {rightSideMenuItems}
           </ul>
           <div className="ml-auto lg:hidden">
             <button
@@ -166,66 +177,8 @@ const Header = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-lg tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Home
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-lg tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Donation
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-lg tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Events
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          className="font-lg tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Blog
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Sign in"
-                          title="Sign in"
-                          className="font-lg tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Sign in
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-lg tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </a>
-                      </li>
+                      {leftSideMenuItems}
+                      {rightSideMenuItems}
                     </ul>
                   </nav>
                 </div>
